@@ -1,12 +1,120 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Кэт энерджи</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
+<head>
+  <meta charset="utf-8">
+  <title>Cat Energy</title>
+</head>
 
+<body class="page__body">
 
-  </body>
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img src="img/blank.svg" alt="Логотип компании Cat Energy">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item site-list__item--active">Главная</li>
+        <li class="site-list__item">
+          <a href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">Подбор программы</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">Интернет магазин Cat Energy</h1>
+
+    <section class="promo">
+      <h2 class="promo__title">Функциональное питание для котов</h2>
+      <b class="promo__text">Занялся собой? Займись котом!</b>
+      <img class="primo__img" src="img/blank.png" alt="Изображение продукта Cat Energy Pro">
+      <a class="promo__link" href="form.html">Подобрать программу</a>
+    </section>
+
+    <section class="programms">
+      <h2 class="visually-hidden">Программы питания</h2>
+      <ul class="programms__list">
+        <li class="programms__item">
+          <h3 class="programms__title programms__title--slim">Похудение</h3>
+          <p class="programms__text">
+            Ваш кот весит больше собаки и почти
+            утратил способность лазить по деревьям? Пора на диету!
+            Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+          </p>
+          <a class="programms__link" href="catalog.html">Каталог slim</a>
+        </li>
+        <li class="programms__item">
+          <h3 class="programms__title programms__title--gain">Набор массы</h3>
+          <p class="programms__text">
+            Заработать авторитет среди дворовых котов
+            и даже собак? Серия Cat Energy Pro поможет вашему коту
+            нарастить необходимые мышцы!
+          </p>
+          <a class="programms__link" href="catalog.html">Каталог pro</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="info">
+      <h2 class="info__title">Как это работает</h2>
+      <ul class="info__list">
+        <li class="info__item info__item--leaf">
+          Функциональное питание
+          содержит только полезные
+          питательные вещества.
+        </li>
+        <li class="info__item info__item--powder">
+          Выпускается в виде порошка,
+          который нужно лишь залить
+          кипятком и готово.
+        </li>
+        <li class="info__item info__item--cutlery">
+          Замените один-два приема
+          обычной еды на наше
+          функциональное питание.
+        </li>
+        <li class="info__item info__item--clock">
+          Уже через месяц наслаждайтесь
+          изменениями к лучшему вашего питомца!
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <a class="footer__logo">
+      <img src="img/blank.svg" alt="Логотип компании Cat Energy">
+    </a>
+    <ul class="page-footer__social social">
+      <li class="social__item">
+        <a class="social__link social__link--vk" href="#">
+          <span class="visually-hidden">ВКонтакте</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#">
+          <span class="visually-hidden social__link--instagram">Instagram</span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--facebook" href="#">
+          <span class="visually-hidden">Facebook</span>
+        </a>
+      </li>
+    </ul>
+    <div class="footer__copyright copyright">
+      <p class="copuright__text">HTML Academy</p>
+      <img src="img/blank.svg" alt="Логотип компании HTML Academy">
+    </div>
+  </footer>
+
+</body>
+
 </html>
