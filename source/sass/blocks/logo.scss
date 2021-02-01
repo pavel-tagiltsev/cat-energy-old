@@ -1,0 +1,13 @@
+.logo {
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
+}

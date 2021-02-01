@@ -1,0 +1,30 @@
+.button {
+  text-transform: uppercase;
+  color: $basic_white;
+
+  background-color: $basic_green;
+
+  &:hover,
+  &:focus {
+    background-color: $basic_green-2;
+  }
+
+  &:active {
+    color: rgba($basic_white, 0.3);
+  }
+
+  &--grey {
+    color: $special_dark-grey;
+
+    background-color: $basic_grey;
+
+    &:hover,
+    &:focus {
+      background-color: $special_grey-5;
+    }
+
+    &:active {
+      color: rgba($special_dark-grey, 0.3);
+    }
+  }
+}

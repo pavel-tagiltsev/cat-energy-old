@@ -1,0 +1,25 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  font-size: 16px;
+  color: $special_dark-grey;
+
+  &:hover .copyright__svg,
+  &:focus .copyright__svg {
+    fill: $basic_green;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+}
+
+.copyright__svg {
+  margin-right: -6px;
+
+  fill: $special_grey-2;
+}
