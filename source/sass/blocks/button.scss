@@ -1,8 +1,18 @@
 .button {
+  display: block;
+  width: 100%;
+  padding: 13px 22px 11px;
+
+  letter-spacing: 1px;
+  font-family: $font-family-secondary;
   text-transform: uppercase;
   color: $basic_white;
+  text-align: center;
 
   background-color: $basic_green;
+  border: none;
+
+  cursor: pointer;
 
   &:hover,
   &:focus {

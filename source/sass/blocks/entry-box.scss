@@ -1,0 +1,48 @@
+.entry-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.entry-box__label {
+  flex-shrink: 0;
+  margin-right: 15px;
+
+  font-size: 16px;
+  font-family: $font-family-secondary;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  &--email,
+  &--phone {
+    margin-right: 10px;
+  }
+}
+
+.entry-box__input {
+  flex-grow: 1;
+
+  &--email,
+  &--phone {
+    padding-right: 40px;
+
+    &:focus ~ .entry-box__icon {
+      fill: $basic_green;
+    }
+  }
+}
+
+.entry-box__icon {
+  position: absolute;
+
+  &--email {
+    top: 35%;
+    right: 15px;
+  }
+
+  &--phone {
+    top: 28%;
+    right: 13px;
+  }
+}

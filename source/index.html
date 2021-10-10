@@ -7,7 +7,7 @@
   <title>Cat Energy</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<!-- TODO: сделать красивы переносы и настроить бъютифай -->
+
 <body class="page__body">
 
     <header class="page-header">
@@ -96,47 +96,66 @@
     </section>
 
     <section class="example">
-      <h2 class="example__title">Живой пример</h2>
-      <dl class="example__desc-list">
-        <div class="example__desc-innder">
-          <dt class="example__desc-term">5кг</dt>
-          <dd class="example__desc-description">Снижение веса</dd>
-        </div>
-        <div class="example__desc-innder">
-          <dt class="example__desc-term">60 дней</dt>
-          <dd class="example__desc-description">Pатрачено времени</dd>
-        </div>
-      </dl>
-      <p class="example__text">Затраты на питание: 15 000 РУБ. </p>
+      <div class="container">
+        <h2 class="example__title title">Живой пример</h2>
+        <p class="example__text">
+          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+        </p>
+        <dl class="example__desc-list">
+          <div class="example__desc-inner">
+            <dt class="example__desc-term">5 кг</dt>
+            <dd class="example__desc-description">Снижение веса</dd>
+          </div>
+          <div class="example__desc-inner">
+            <dt class="example__desc-term">60 дней</dt>
+            <dd class="example__desc-description">Затрачено времени</dd>
+          </div>
+        </dl>
+        <p class="example__suptitle">Затраты на питание: 15 000 РУБ. </p>
+      </div>
       <ul class="example__list slider__list">
-        <li class="example__item slider__item">
-          <img src="img/blank.png" alt="Результат до">
+        <li class="example__item slider__item slider__item--current">
+          <img src="./img/before-mobile@1x.png" width="320" height="240" alt="Результат до">
         </li>
         <li class="example__item slider__item">
-          <img src="img/blank.png" alt="Результат после">
+          <img src="./img/after-mobile@1x.png" width="320" height="240" alt="Результат после">
         </li>
       </ul>
       <div class="example__toggels slider__toggels">
         <button class="slider__toggle slider__toggle--current" type="button">Было</button>
-        <div class="slider__bar">
-          <input class="slider__range" type="range" min="0" max="2" step="1">
+        <div class="slider__scale scale">
+          <div class="scale__range">
+            <div class="scale__bar"></div>
+          </div>
+          <div class="scale__toggle" tabindex="0" aria-label="Ползунок для слайдера"></div>
         </div>
         <button class="slider__toggle" type="button">Стало</button>
       </div>
     </section>
 
     <section class="contacts">
-      <h2 class="visually-hidden">Адрес компании</h2>
-      <header class="contacts__wrapper">
-        <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
-        <p class="contacts__adress">Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      </header>
-      <div class="map">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac7665baf4dcaa32652b0fa71dd3cbe10f93ff606e4e99641230a5ff98be77371&amp;source=constructor" allowfullscreen
-          title="Адрес компании: Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"></iframe>
-        <img class="map__img" src="img/blank.png" alt="Адрес компании: Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-      </div>
-    </section>
+  <h2 class="visually-hidden">Адрес компании</h2>
+  <header class="contacts__wrapper container">
+    <b class="contacts__title">Приглашаем<br>
+      к сотрудничеству дилеров!</b>
+    <p class="contacts__adress">Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+  </header>
+  <div class="map">
+    <iframe
+      class="map__iframe"
+      width="320"
+      height="362"
+      src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac7665baf4dcaa32652b0fa71dd3cbe10f93ff606e4e99641230a5ff98be77371&amp;source=constructor"
+      allowfullscreen="allowfullscreen"
+      title="Адрес компании: Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"></iframe>
+    <img
+      class="map__img"
+      src="./img/bg-map-mobile@1x.png"
+      width="320"
+      height="362"
+      alt="Адрес компании: Ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+  </div>
+</section>
   </main>
 
   <footer class="page-footer container">

@@ -1,0 +1,7 @@
+.container {
+  min-width: $mobile-width;
+  max-width: $desktop-width;
+  margin: 0 auto;
+  padding-left: $mobile-paddings;
+  padding-right: $mobile-paddings;
+}

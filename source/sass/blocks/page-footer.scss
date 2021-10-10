@@ -1,9 +1,18 @@
 .page-footer {
-  padding-top: 30px;
-  text-align: center;
+  padding-top: 28px;
+
+  background-color: $basic_grey;
+}
+
+.page-footer__bottom {
+  padding-top: 40px;
 }
 
 .footer__logo {
-  display: inline-block;
-  margin-bottom: 28px;
+  display: block;
+  width: 128px;
+  height: 24px;
+  margin-right: auto;
+  margin-bottom: 27px;
+  margin-left: auto;
 }
